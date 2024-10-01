@@ -11,7 +11,7 @@ sta.ifconfig()
 
 def monitor():
 	#mengambil data dari accuweather
-	r = urequests.get("https://api.openweathermap.org/data/2.5/weather?q=Yogyakarta,id&appid=39860be932e9680238339a90bac4d163&units=metric").json()
+	r = urequests.get("https://api.openweathermap.org/data/2.5/weather?q=Yogyakarta,id&appid=<token>&units=metric").json()
 	suhu = r['main']['temp']
 	kondisi = r['weather'][0]['main']
 	city = r['name']
